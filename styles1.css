@@ -1,0 +1,85 @@
+body{
+    --opacidad-negro: 0.5;
+    background: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url(https://img.freepik.com/foto-gratis/pantalla-escaneo-programador-su-reloj-inteligente-camara-telefono-inteligente_1098-18710.jpg?w=996&t=st=1665023158~exp=1665023758~hmac=b6a1420813840ea3789aaf9881137fb2d629614eb675d64c5b3d74cf748f9b4c) center center/cover  no-repeat fixed;
+    height: 100%; 
+}
+
+
+
+h1, p {
+    margin: 10px auto;
+    text-align: center;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+p{
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 10px;
+    text-decoration: underline solid white;
+    font-style: italic;
+}
+
+#title,#description,label,#submit{
+    color: white;
+}
+
+#contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#survey-form {
+    background: rgba(11,14,55,0.83) url("/images/smiley.png") no-repeat scroll 0 0;
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+fieldset{
+    border: none;
+    border-bottom: 3px solid #3b3b4f;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+.inline {
+    width: unset;
+    margin: 0 1em 0 1em;
+    vertical-align: middle;
+}
+
+.txtrd{
+    font-size: 12px;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#submit{
+    background: #343434;
+    width: 200px;
+    position: relative;
+    left: 30%
+}
+#submit:hover{
+    background: #ffffff;
+    color: black;
+}
+#submit:active{
+    background: #3b3b4f;
+    color: rgb(16, 247, 209);
+}

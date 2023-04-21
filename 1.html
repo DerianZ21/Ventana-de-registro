@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="styles1.css">
+        <title>Registro de usuarios</title>
+    </head>
+    <body>
+            <h1 id="title">Registrar</h1>
+            <p id="description">Gracias por ayudar a hacer crecer nuestra comunidad :D</p>
+            <div id="contenedor">
+                <form id="survey-form" action='https://register-demo.freecodecamp.org'>
+                    <fieldset>
+                        <label id="name-label" for="name">Nombre<input id="name" type="text" placeholder="Ingrese su nombre..." required/></label>
+                        <label id="email-label" for="email">E-mail<input id="email" type="email" placeholder="Ingrese su correo..." required/></label>
+                        <label id="number-label" for="number">Edad(optional)<input id="number" type="number" min="10" max="150" placeholder="Ingrese un número..." required/></label>
+                        <label for="dropdown">¿Ocupación actual?
+                            <select id="dropdown">
+                                <option>Selecciona un rol</option>
+                                <option>Estudiante institucional</option>
+                                <option>Autodidacta</option>
+                                <option>Trabajo a tiempo completo</option>
+                                <option>Prefiero no decirlo</option>
+                                <option>Otro</option>
+                            </select>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label>Recomiendas este registro?</label>
+                        <label class="txtrd"><input type="radio" name="recomendación" value="SI" class="inline"/>SI</label>
+                        <label class="txtrd"><input type="radio" name="recomendación" value="talvez" class="inline"/>talvez</label>
+                        <label class="txtrd"><input type="radio" name="recomendación" value="NO" class="inline"/>NO</label>
+                        <label>¿Tiene conocimientos previos de programación?<input type="checkbox" value="si" class="inline"/></label>
+                        <label>Acepto los terminos y condiciones<input type="checkbox" value="acepto" class="inline"/></label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="comentarios">Comentarios
+                            <textarea id="comentarios" placeholder="Comentanos lo que tu quieras..." ></textarea>
+                        </label>
+                        <input id="submit" type="submit" value="ENVIAR"/>
+                    </fieldset>
+                </form>
+            </div>
+    </body>
+</html>
